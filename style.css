@@ -1,4 +1,13 @@
 /* defult valus start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:focus {
+    outline: 0;
+}
+
 h1,
 h2,
 h3,
@@ -24,9 +33,6 @@ li {
     list-style-type: none;
 }
 
-body {
-    margin: 0;
-}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -34,385 +40,310 @@ body {
 
 /* defult valus end */
 
-
-
-/*  Start Deful valus for this Designe */
-
 /* Font Family */
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-family: "TitilliumWeb-SemiBold";
+    src: url("vendors/fonts-family/TitilliumWeb-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Italic";
+    src: url("vendors/fonts-family/TitilliumWeb-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url("vendors/fonts-family/TitilliumWeb-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Light";
+    src: url("vendors/fonts-family/TitilliumWeb-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url("vendors/fonts-family/TitilliumWeb-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+/* Font Family */
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.btn {
-    font-family: Montserrat;
-    background-color: rgba(0, 0, 255, 1);
-    color: #ffffff;
-    display: inline-block;
-    padding: 17px 45px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 0.25rem;
-    border: 5px solid transparent;
-    transition: all 0.3s;
-}
-
-.btn:hover {
-    background-color: rgba(0, 0, 255, 0.8);
-}
-
-.btn-2 {
-    font-family: Montserrat;
-    background-color: rgba(0, 0, 255, 1);
-    color: #ffffff;
-    display: inline-block;
-    padding: 15px 40px;
-    font-size: 15px;
-    font-weight: normal;
-    border-radius: 0.25rem;
-    border: 5px solid transparent;
-    transition: all 0.3s;
-}
-
-.btn-2:hover {
-    background-color: rgba(0, 0, 255, 0.8);
-}
-
-.btn-hover {
-    font-family: Montserrat;
-    color: rgba(0, 0, 255, 1);
-    background-color: #ffffff;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 17px 45px;
-    border-radius: 0.25rem;
-    border: 5px solid transparent;
-    transition: all 0.3s;
-}
-.btn-hover:hover {
-    background-color: rgba(0, 0, 255, 1);
-    color: #ffffff;
-}
-
-/* typography */
-.s-h5 {
-    color: rgba(10, 3, 98, 0.8);
-    margin-bottom: 10px;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-.s-h2 {
-    color: rgba(10, 3, 98, 1);
-    margin-bottom: 25px;
-    font-family: Playfair Display;
-    font-weight: 900;
-    font-size: 50px;
-    text-transform: capitalize;
-    line-height: 1.2em;
-}
-
-.s-p {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.8em;
-    color: #808291;
-    padding: 8px 0;
-}
-
-/* End Deful valus for this Designe */
-
-/* Start First Section CSS */
-.first-section {
-    width: 100%;
-    height: 814px;
-    overflow: hidden;
-}
-.first-section .inner-header {
-    width: 100%;
-    min-height: 84px;
-    background-color: rgb(255, 255, 255);
-}
-
-.first-section .inner-header .container-inner-header {
-    width: 74.2%;
-    margin: 0 auto;
-    font-family: Montserrat;
-}
-.first-section .logo-box {
-    width: 130px;
-    height: 40px;
-    overflow: hidden;
-    padding: 22px 0 22px 8px;
-    float: left;
-    overflow: hidden;
-}
-.first-section .nav-box {
-    float: left;
-    margin-left: 60px;
-    padding: 33px 0;
-}
-.first-section .nav-box ul {
-}
-
-.first-section .nav-box ul::after {
+/* Start Reuseable Style */
+.clearfix::after {
     display: block;
     content: "";
     clear: both;
 }
 
-.first-section .nav-box ul li {
-    float: left;
-    position: relative;
-}
-
-.first-section .nav-box ul li a {
-    color: #0a0362;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 15px;
-}
-.nav-box ul li:hover a {
-    color: #0000ff;
-}
-.first-section .nav-box ul li .active-color {
-    color: #0000ff;
-}
-
-.first-section .nav-box i {
-    display: inline-block;
-    border-top: 4px solid #343a40;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    vertical-align: middle;
-}
-
-.first-section .nav-box ul li .dropwon-menu {
-    position: absolute;
-    background-color: #ffffff;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    top: 100%;
-    z-index: 80;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.4s;
-}
-.first-section .nav-box ul li:hover .dropwon-menu {
-    top: 53px;
-    visibility: visible;
-    opacity: 1;
-}
-.first-section .nav-box ul li .dropwon-menu h3 {
-    font-family: Playfair Display;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 20px 0 12px 0px;
-    margin-left: 15px;
-    width: 83%;
-    border-bottom: 1px solid rgba(52, 58, 64, 0.12);
-}
-.first-section .nav-box ul li .dropwon-menu ul {
-    width: 230px;
-    color: #212529;
-    padding: 15px 0;
-}
-
-.first-section .nav-box ul li .dropwon-menu ul li {
-    width: 90%;
-}
-.first-section .nav-box ul li .dropwon-menu ul li a {
-    padding: 12px 0 12px 15px;
-    display: inline-block;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-    font-size: 14px;
-    display: block;
-}
-.first-section .nav-box ul li .dropwon-menu ul li:hover a {
-    background-color: #f0f0f0;
-    color: #0a0362;
-}
-
-.first-section .nav-logo {
-    float: right;
-    padding: 20px 0;
-    display: none;
-    cursor: pointer;
-    position: relative;
-}
-.first-section .nav-logo i {
-    font-size: 40px;
-    transition: all 0.4s;
-}
-.first-section .nav-logo:hover i {
-    color: #636e72;
-}
-.first-section .nav-logo ul {
-    position: absolute;
-    top: 85px;
-    z-index: 100;
-    right: 0;
-    background-color: rgb(255, 255, 255);
-    padding: 0 10px 10px 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.4s;
-}
-.first-section .nav-logo:hover ul {
-    visibility: visible;
-    opacity: 1;
-}
-.first-section .nav-logo ul li {
-    padding: 0 10px;
-    transition-duration: 0.3s;
-}
-.first-section .nav-logo ul li a {
-    display: block;
-    width: 400px;
-    padding: 13px 0;
-    color: #0a0362;
-}
-.first-section .nav-logo ul li .active-color {
-    color: #0000ff;
-}
-
-.first-section .nav-logo ul li:hover {
-    background-color: rgb(199, 199, 199);
-}
-
-.first-section .nav-logo ul li:hover a {
-    color: #0000ff;
-}
-
-.first-section .button-try-live {
-    float: right;
-    overflow: hidden;
-    padding: 14px 50px 14px 0px;
-}
-.first-section .button-try-live .btn {
-    padding: 12px 16px;
-}
-/* End Inner Header */
-.first-section .background-img-n-contents {
-    position: relative;
-    width: 100%;
-    min-height: 730px;
-    overflow: hidden;
-}
-
-.first-section .background-img-n-contents .background-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-.first-section .background-img-n-contents .background-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.first-section .background-img-n-contents .opacity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(19, 15, 64, 0.2);
-    z-index: 2;
-}
-.first-section .container {
-    width: 50%;
+.btn {
+    text-transform: uppercase;
+    background-color: #eb7d4b;
+    border-bottom: 3px solid #c86a40;
+    border-radius: 3px;
     color: #ffffff;
+    padding: 16px 20px;
+    width: 242px;
     text-align: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
+    margin: 0 auto;
+}
+.active {
+    background: rgba(100, 58, 121, 1) !important;
 }
 
-.first-section .container .inner-container {
-    margin-top: 140px;
+.d-block {
+    display: block;
 }
-
-.first-section .container h2 {
-    font-family: Playfair Display;
-    font-size: 80px;
-    font-weight: 900;
-    padding: 0 0 25px 0;
+.section {
+    text-align: center;
 }
-.first-section .container p {
-    font-family: Montserrat;
-    font-weight: 700;
-    padding: 0 100px 50px 100px;
+.section .top-section h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    letter-spacing: 3px;
+}
+.section .container hr {
+    width: 90px;
+    margin: 0 auto;
+    height: 4px;
+    background-color: #14a58c;
+    border: 0;
+}
+.section .container .top-section p {
+    font-size: 18px;
     line-height: 30px;
-    letter-spacing: 2px;
+    padding-top: 20px;
 }
 
+.section .container .bottom-section .span_1_of_4 {
+    padding: 0 20px;
+}
+
+.section .container .bottom-section .box h3 {
+    font-size: 23px;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+.section .container .bottom-section .box p {
+    font-family: TitilliumWeb-Light;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* End Reuseable Style */
+
+body {
+    margin: 0;
+    font-family: TitilliumWeb-Regular;
+}
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+/***** Start Header Section/Nav CSS ****/
+.one-header-section {
+    overflow: hidden;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url("resources/images/bg-img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.one-header-section .container {
+    overflow: hidden;
+}
+.one-header-section .nav-bar {
+    padding: 45px 0 10px 0;
+}
+
+.one-header-section .container .logo-lnk {
+    float: left;
+    overflow: hidden;
+}
+.one-header-section .logo {
+    width: 110px;
+    height: auto;
+}
+
+.one-header-section .container .main-nav {
+    float: right;
+}
+
+.one-header-section .container .main-nav li {
+    float: left;
+    overflow: hidden;
+    margin: 3px 18px 0 0;
+}
+.one-header-section .container .main-nav li:last-child {
+    margin-right: 0;
+}
+.one-header-section .container .main-nav li a {
+    padding: 7px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.one-header-section .container .main-nav li:hover a {
+    background: rgba(100, 58, 121, 1) !important;
+}
+
+.one-header-section .container .mobile-nav-icon {
+    display: none;
+    float: right;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.one-header-section .container .mobile-nav-icon i {
+    font-size: 38px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.one-header-section .container .mobile-nav-icon i:hover {
+    color: #b8babb;
+}
+
+.one-header-section .container .mobile-nav-icon .overlay {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 150;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.one-header-section .container .mobile-nav-icon .overlay .close-nav {
+    font-size: 35px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.one-header-section .container .mobile-nav-icon .overlay .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 90%;
+
+    margin: 0 auto;
+}
+.one-header-section .container .mobile-nav-icon .overlay .overlay-content a {
+    display: block;
+    color: #999;
+    width: 100%;
+    font-size: 30px;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+.one-header-section .container .mobile-nav-icon .overlay .overlay-content a:hover {
+    color: #ffffff;
+    background-color: rgb(175 183 191 / 64%);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 110;
+    background-image: none;
+    background-color: rgba(135, 80, 156, 0.9);
+    box-shadow: 0 2px 8px rgba(63, 62, 62, 0.801);
+}
+
+.sticky .container .sticky-padding {
+    padding: 10px 0;
+}
+
+/***** End Header Section/Nav CSS ****/
+
+/* Start First Section Css */
+.first-section {
+    width: 100%;
+
+    color: #ffffff;
+    background-image: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url("resources/images/bg-img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.first-section .container {
+    overflow: hidden;
+}
+
+.first-section .container .frst-sctn-content {
+    padding: 125px 0 177px 0;
+}
+.first-section .container .frst-sctn-content .hero-text-box {
+    padding: 0 20px 70px 20px;
+}
+.first-section .container .frst-sctn-content .hero-text-box h1 {
+    font-size: 40px;
+    font-family: TitilliumWeb-Bold;
+    text-align: center;
+    line-height: 1.3;
+}
 /* End First Section CSS */
 
 /* Start Second Section CSS */
 .second-section {
     width: 100%;
-    min-height: 600px;
+    min-height: 680px;
     overflow: hidden;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url("resources/images/bg-img/services-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
+
 .second-section .container {
-    overflow: hidden;
-    padding: 120px 0 70px 0;
-}
-.second-section .inner-section {
-    width: 50%;
-    min-height: 500px;
-    float: left;
+    padding: 80px 0;
     overflow: hidden;
 }
-
-.second-section .left-side {
+.second-section .container .top-section {
+    padding: 0 230px;
 }
 
-.second-section .left-side .img-box {
-    width: 85%;
-    padding: 0 0 0 25px;
+.second-section .container .bottom-section {
+    padding: 80px 0 50px 0;
+}
+.second-section .container .bottom-section .box {
+}
+.second-section .container .bottom-section .box .img {
+    width: 45%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.second-section .right-side {
+.second-section .container .bottom-section .box-2 .img {
+    width: 32%;
 }
-.content-box {
-    padding: 0 23px;
+.second-section .container .bottom-section .box-3 .img {
+    width: 58.5%;
 }
-
-.second-section .right-side .p-box {
-    margin-bottom: 30px;
+.second-section .container .bottom-section .box-4 .img {
+    width: 33%;
 }
 
 /* End Second Section CSS */
@@ -420,189 +351,146 @@ body {
 /* Start Third Section CSS */
 .third-section {
     width: 100%;
-    min-height: 900px;
-    background-color: rgba(245, 245, 245, 1);
     overflow: hidden;
+    color: #3c4761;
+    background: linear-gradient(rgba(231, 241, 248, 0.9), rgba(231, 241, 248, 0.9)), url("resources/images/bg-img/team-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
 }
 .third-section .container {
-    padding: 100px 0;
+    padding: 80px 0;
 }
-.third-section .content-box {
-    overflow: hidden;
+.third-section .container .top-section h2 {
+    font-size: 40px;
     padding: 0 0 30px 0;
 }
-.third-section .inner-section-in-trd {
-    float: left;
-    overflow: hidden;
-    width: 50%;
+.third-section .container .top-section hr {
+    background-color: #c8d9e5;
 }
-.third-section .inner-section-in-trd .btn2-box {
-    float: right;
-    overflow: hidden;
-    margin-top: 80px;
+.third-section .container .top-section p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+    color: #000000;
 }
-.third-section .inner-section-in-trd .s-p {
+
+.third-section .container .bottom-section {
+    padding: 50px 0 0 0;
+}
+.third-section .container .bottom-section .box {
+    overflow: hidden;
+}
+.third-section .container .bottom-section .box .img {
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+.third-section .container .bottom-section .box .img img {
+    border-radius: 50%;
+}
+.third-section .container .bottom-section .box .h3-n-span {
+    font-size: 21px;
+    padding: 25px 0;
+    text-transform: uppercase;
+    color: #000000;
+}
+.third-section .container .bottom-section .box .h3-n-span h3 {
     padding: 0;
 }
-.third-section .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.third-section .container .bottom-section .box .role {
+    color: #30bae7;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    display: inline-block;
 }
 
-
-.third-section .row .item-box {
-    width: 31.6%;
-    min-height: 211px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 1);
-    margin-top: 2.6%;
-    box-shadow: 0px 0px 30px 0px rgba(10, 3, 98, 0.08);
-    transition: all 0.3s;
-}
-.third-section .row .item-box:hover {
-    box-shadow: 0px 20px 40px 0px rgba(10, 3, 98, 0.15);
-}
-
-.third-section .row .item-box .inner-item-box {
-    padding: 50px 25px;
+.third-section .container .bottom-section .box ul {
+    width: 92%;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
     overflow: hidden;
 }
-
-.third-section .item-box .inner-item-box .box-content-section {
+.third-section .container .bottom-section .box ul li {
     float: left;
     overflow: hidden;
-    fill: rgba(0, 0, 255, 1);
+    width: 42px;
+    min-height: 42px;
+    margin-right: 15px;
 }
-.third-section .item-box .inner-item-box .s-one {
-    width: 20%;
-    margin-right: 3%;
+.third-section .container .bottom-section .box ul li:last-child {
+    margin-right: 0;
 }
-
-.third-section .inner-item-box .box-content-section svg {
-    width: 80%;
+.third-section .container .bottom-section .box ul li a {
+    width: 100%;
+    display: block;
+    background-color: #bdd1df;
+    overflow: hidden;
+    border-radius: 50%;
 }
-
-.third-section .item-box .inner-item-box .s-two {
-    width: 77%;
+.third-section .container .bottom-section .box ul li i {
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.5s;
 }
-.third-section .item-box .inner-item-box h3 {
-    color: rgba(10, 3, 98, 1);
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2em;
+.third-section .container .bottom-section .box ul li:hover a {
+    background-color: #393939;
 }
-.third-section .item-box .inner-item-box p {
-    color: rgba(128, 130, 145, 1);
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8em;
-    padding-top: 15px;
+.third-section .container .bottom-section .box ul li:hover i {
+    transform: rotate(360deg);
+    text-align: center;
 }
-
 /* End Third Section CSS */
 
 /* Start Fourth Section CSS */
 .fourth-section {
     width: 100%;
-    min-height: 500px;
-    background-color: #ffffff;
+    color: #3c4761;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("resources/images/bg-img/skill-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .fourth-section .container {
     padding: 100px 0;
-    min-height: 600px;
+}
+.fourth-section .container .top-section {
+    padding: 0 230px;
+}
+.fourth-section .container .top-section hr {
+    background-color: #dfe8ed;
+}
+.fourth-section .container .bottom-section {
+    padding: 50px 0 0 0;
+}
+.fourth-section .container .bottom-section .box {
+}
+.fourth-section .container .bottom-section .box h3 {
+    padding: 0;
 }
 
-.fourth-section .container::after {
-    display: block;
-    content: "";
-    clear: both;
-}
-.fourth-section .header-of-fourth-section {
-    overflow: hidden;
-    padding-bottom: 25px;
+.fourth-section .container .bottom-section .box .all-prgrs circle {
+    stroke-width: 5;
 }
 
-.fourth-section .left-right-sides {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-}
-.fourth-section .left-right-sides .s-p {
-    padding: 24px 0 24px 20px;
+.fourth-section .container .bottom-section .box .web-dg-prgrs circle {
+    stroke: #30bae7;
 }
 
-.fourth-section .item-container {
-    width: 100%;
+.fourth-section .container .bottom-section .box .html-css-prgrs circle {
+    stroke: #d74680;
 }
-.fourth-section .item-container::after {
-    display: block;
-    content: "";
-    clear: both;
+.fourth-section .container .bottom-section .box .grphic-dg-prgrs circle {
+    stroke: #15c7a8;
 }
-
-.fourth-section .item {
-    width: 31.65%;
-    min-height: 500px;
-    margin-right: 2.5%;
-    float: left;
-    overflow: hidden;
-    box-shadow: 0px 5px 30px 0px rgba(10, 3, 98, 0.08);
-    transition: all 0.3s;
-}
-.fourth-section .item-container .item-3 {
-    margin-right: 0;
-}
-.fourth-section .item:hover {
-    box-shadow: 0px 20px 40px 0px rgba(10, 3, 98, 0.15);
+.fourth-section .container .bottom-section .box .ux-ui-prgrs circle {
+    stroke: #eb7d4b;
 }
 
-.fourth-section .item .img-box {
-    width: 100%;
-    overflow: hidden;
-}
-.fourth-section .item .content-container {
-    padding: 35px 40px 45px 40px;
-}
-
-.fourth-section .item .content-container h2 {
-    color: rgba(10, 3, 98, 1);
-    margin-bottom: 20px;
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: capitalize;
-    line-height: 1.3em;
-}
-
-.fourth-section .item .content-container p {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8em;
-    color: rgba(128, 130, 145, 1);
-    margin-bottom: 30px;
-}
-
-.fourth-section .item .content-container a {
-    color: rgba(0, 0, 255, 1);
-    border-style: solid;
-    border-width: 0px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 2px 0;
-}
-.fourth-section .item .content-container a:hover {
-    color: rgba(0, 0, 255, 0.8);
-}
-.fourth-section .item .content-container a:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+.fourth-section .container .bottom-section .box .all-prgrs text {
+    fill: #3c4761;
 }
 
 /* End Fourth Section CSS */
@@ -610,604 +498,246 @@ body {
 /* Start Fiveth Section CSS */
 .fiveth-section {
     width: 100%;
-    min-height: 990px;
-    background-color: rgb(255, 255, 255);
-    background-image: url("images/banner-1.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: cover;
     overflow: hidden;
+    background-image: linear-gradient(rgba(255, 221, 153, 0.9), rgba(255, 221, 153, 0.9)), url("resources/images/bg-img/portfolio-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
 }
 .fiveth-section .container {
-    overflow: hidden;
-    color: #ffffff;
-    margin-top: 200px;
+    padding: 100px 0;
 }
-
-.fiveth-section .section-lft-rgt {
-    float: left;
-    overflow: hidden;
+.fiveth-section .container .top-section {
+    padding: 0 245px;
 }
-.fiveth-section .left-section {
-    width: 60%;
+.fiveth-section .container .top-section hr {
+    background-color: #e5c37f;
 }
-
-.fiveth-section .left-section .left-scn-top {
-    overflow: hidden;
-    padding: 0 50px 0 0;
+.fiveth-section .container .bottom-section {
+    padding-top: 50px;
 }
-
-.fiveth-section .container .s-h2,
-.fiveth-section .container .s-h5,
-.fiveth-section .container .s-p {
-    color: #ffffff;
+.fiveth-section .container .bottom-section .portfolio-filter-btns {
 }
-
-.fiveth-section .left-section .left-scn-bottom {
-    overflow: hidden;
-    padding: 70px 0 40px 0;
-}
-
-.fiveth-section .left-section .left-scn-bottom .box {
-    width: 50%;
-    min-height: 200px;
-    float: left;
-    overflow: hidden;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 50px 0 0;
-}
-.fiveth-section .left-section .box .icon-20 {
-    width: 18%;
-}
-.fiveth-section .left-section .icon-20 i {
-    font-size: 30px;
-    padding: 0 7px;
-}
-
-.fiveth-section .left-section .left-scn-bottom .box .text-80 {
-    width: 82%;
-}
-.fiveth-section .left-section .left-scn-bottom .box h3 {
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2em;
-}
-
-.fiveth-section .left-section .left-scn-bottom .box .text-80 .p-pad {
-    padding-top: 18px;
-}
-
-.fiveth-section .right-section {
-    width: 40%;
-    padding: 50px 0 0 0;
-    overflow: hidden;
-}
-.fiveth-section .right-section .ratio-scal {
-    width: 100%;
-    text-align: center;
-    min-height: 180px;
-}
-.fiveth-section .right-section .ratio-scal h2 {
-    font-family: Playfair Display;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 1;
-}
-.fiveth-section .right-section .ratio-scal h3 {
-    font-family: Montserrat;
-    font-weight: 500;
+.fiveth-section .container .bottom-section .portfolio-filter-btns .filter-btn {
+    background-color: #ebc985;
     font-size: 18px;
-    line-height: 1.7em;
-    padding-top: 15px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #3c4761;
+    margin: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.fiveth-section .container .bottom-section .portfolio-filter-btns .mixitup-control-active {
+    background-color: #ffffff;
+}
+
+.fiveth-section .container .bottom-section .portfolio-filter-btns .filter-btn:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
+    box-shadow: inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
+}
+
+.fiveth-section .container .bottom-section .portfolio-items {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fiveth-section .container .bottom-section .portfolio-items .box {
+    width: 48.5%;
+    margin-right: 3%;
+    float: left;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.fiveth-section .container .bottom-section .portfolio-items .box-2,
+.fiveth-section .container .bottom-section .portfolio-items .box-4 {
+    margin-right: 0;
+}
+
+.fiveth-section .container .bottom-section .portfolio-items .box h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.fiveth-section .container .bottom-section .btn {
+    background-color: #17c2a4;
+    border-color: #14a58c;
+    margin-top: 60px;
 }
 
 /* End Fiveth Section CSS */
 
 /* Start Sixth Section CSS */
 .sixth-section {
+    color: #ffffff;
     width: 100%;
     overflow: hidden;
-}
-.sixth-section .container {
-    overflow: hidden;
-    padding: 100px 0 20px 0;
-}
-.sixth-section .container .top-section {
-    text-align: center;
-    overflow: hidden;
-    padding: 50px 230px;
-}
-.sixth-section .bottom-section {
-    overflow: hidden;
-    padding: 0 15px;
-}
-.sixth-section .bottom-section .video-theme {
-    width: 100%;
-    max-height: 600px;
-    position: relative;
-}
-.sixth-section .bottom-section .video-theme .vdo-logo-icon {
-    position: absolute;
-    top: 43%;
-    left: 43%;
-    display: block;
-    font-size: 100px;
-    color: #ffffff;
-    width: 8.5%;
-}
-.sixth-section .bottom-section .video-theme .vdo-logo-icon i {
-    display: block;
-    width: 97%;
-    margin: 0 auto;
-    font-size: 100px;
-    color: #ffffff;
+    background-image: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url("resources/images/bg-img/testimonial-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
+.sixth-section .container {
+    padding: 80px 0;
+}
+.sixth-section .container .top-section hr {
+    background-color: #ffffff;
+}
+.sixth-section .container .bottom-section {
+    text-align: left;
+    padding: 50px 0 0 0;
+}
+
+.sixth-section .container .bottom-section .box {
+    width: 49.2%;
+    margin-right: 1.6%;
+    margin-top: 100px;
+    float: left;
+    overflow: hidden;
+    display: flex;
+}
+.sixth-section .container .bottom-section .box-2,
+.sixth-section .container .bottom-section .box-4 {
+    margin-right: 0;
+}
+.sixth-section .container .bottom-section .box-1,
+.sixth-section .container .bottom-section .box-2 {
+    margin-top: 0;
+}
+
+.sixth-section .container .bottom-section .box .box-logo {
+    width: 200px;
+    overflow: hidden;
+}
+.sixth-section .container .bottom-section .box .box-logo img {
+    border-radius: 50%;
+}
+
+.sixth-section .container .bottom-section .box .content-text {
+    padding-right: 125px;
+    margin-left: 20px;
+}
+.sixth-section .container .bottom-section .box .content-text p {
+    font-family: TitilliumWeb-Light;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 30px;
+}
+.sixth-section .container .bottom-section .box .content-text h3 {
+    padding: 20px 0 10px 0;
+}
+.sixth-section .container .bottom-section .box .content-text span {
+    display: block;
+    color: #fd9;
+}
 /* End Sixth Section CSS */
 
 /* Start Seventh Section CSS */
 .seventh-section {
     width: 100%;
-    min-height: 800px;
-    background-color: rgb(255, 255, 255);
+    min-height: 500px;
+    color: #ffffff;
     overflow: hidden;
+    background-image: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url("resources/images/bg-img/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
 }
 .seventh-section .container {
-    padding: 100px 0;
+    padding: 80px 0;
 }
-.seventh-section .container::after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
 .seventh-section .container .top-section {
-    text-align: center;
-    padding: 0 230px;
+    padding: 0 240px;
+}
+.seventh-section .container .top-section hr {
+    background-color: #273a71;
 }
 
 .seventh-section .container .bottom-section {
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding: 50px 0 0 0;
 }
-.seventh-section .container .bottom-section::after {
-    display: block;
-    content: "";
-    clear: both;
+.seventh-section .container .bottom-section form {
+    width: 800px;
+    margin: 0 auto;
 }
-.seventh-section .bottom-section .box {
-    width: 31.65%;
-    min-height: 500px;
-    margin-right: 2.5%;
-    background-color: #ffffff;
+.seventh-section .container .bottom-section form .ipunt-text-email-cotnr {
+    width: 100%;
+    overflow: hidden;
+}
+.seventh-section .container .bottom-section form .ipunt-text-email-cotnr div {
+    width: 49%;
     float: left;
     overflow: hidden;
-    box-shadow: 0px 0px 30px 0px rgba(10, 3, 98, 0.08);
-    transition: all 0.3s;
+    margin-right: 2%;
 }
-.seventh-section .bottom-section .box:hover {
-    box-shadow: 0px 20px 40px 0px rgba(10, 3, 98, 0.15);
-}
-.seventh-section .bottom-section .box-3 {
+
+.seventh-section .container .bottom-section form .ipunt-text-email-cotnr div:last-child {
     margin-right: 0;
 }
-.seventh-section .bottom-section .box .box-container {
-    padding: 50px;
+
+.seventh-section .container .bottom-section form .input-text,
+.seventh-section .container .bottom-section form .input-email,
+.seventh-section .container .bottom-section form textarea {
+    width: 100%;
+    background-color: #273a71;
+    border: 1px solid #273a71;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0;
 }
-.seventh-section .bottom-section .box h4 {
-    color: rgba(10, 3, 98, 1);
-    margin-bottom: 15px;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
+
+.seventh-section .container .bottom-section textarea {
+    resize: vertical;
 }
-.seventh-section .bottom-section .box h2 .span-all {
-    font-family: Playfair Display;
-    font-weight: 900;
+.seventh-section .container .bottom-section form input::placeholder,
+.seventh-section .container .bottom-section form textarea::placeholder {
+    color: #ffffff;
 }
-.seventh-section .bottom-section .box h2 .span-1 {
-    padding-right: 6px;
-    font-size: 30px;
+.seventh-section .container .bottom-section form .btn {
+    border: 0;
+    border-bottom: 3px solid #299ec5;
+    background-color: #30bae7;
+    margin-top: 45px;
 }
-.seventh-section .bottom-section .box h2 .span-2 {
-    font-size: 60px;
-    line-height: 70px;
-    padding: 0;
-    margin: 0;
-}
-.seventh-section .bottom-section .box h2 .span-3 {
-    color: rgba(19, 15, 64, 0.9);
-    font-size: 16px;
-    box-sizing: border-box;
-    line-height: 1.4;
-}
-.seventh-section .bottom-section .box-2 h2 .span-1,
-.seventh-section .bottom-section .box-2 h2 .span-2 {
-    color: rgba(0, 0, 255, 1);
-}
-.seventh-section .bottom-section .box ul {
-    margin: 40px 0;
-}
-.seventh-section .bottom-section .box ul li {
-    padding: 4px 0;
-}
-.seventh-section .bottom-section .box ul li .d-for-flex {
-    display: flex;
-}
-.seventh-section .bottom-section .box ul li i {
-    color: rgba(46, 204, 113, 1);
-    font-size: 14px;
-    padding-right: 10px;
-    line-height: 33px;
-}
-.seventh-section .bottom-section .box ul li span {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    color: rgba(98, 100, 116, 1);
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 16px;
-    transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;
-}
-.seventh-section .bottom-section .box a {
-    color: rgba(245, 245, 245, 1);
-    background-color: rgba(19, 15, 64, 1);
-    font-family: Montserrat;
-    font-weight: 500;
-    padding: 22px 40px;
-    margin: 0;
-    display: inline-block;
-    transition: all 0.3s;
-    margin-bottom: 30px;
-    width: 94px;
-}
-.seventh-section .bottom-section .box a:hover {
-    background-color: rgba(0, 0, 255, 1);
-}
-.seventh-section .bottom-section .box-2 a {
-    background-color: rgba(0, 0, 255, 1);
-}
-.seventh-section .bottom-section .box-2 a:hover {
-    background-color: rgba(19, 15, 64, 1);
-}
+
 /* End Seventh Section CSS */
 
-/* Start Eighth Section CSS */
-.eighth-section {
-    width: 100%;
-    min-height: 870px;
-    background-color: rgba(245, 245, 245, 1);
-    overflow: hidden;
-    position: relative;
-}
-.eighth-section .bg-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    overflow: hidden;
-}
-.eighth-section .bg-img img {
-    transform: scaleY(1.5) scaleX(1.58);
-    margin-top: 145px;
-}
-.eighth-section .container {
-    overflow: hidden;
-}
-.eighth-section .inner-section {
-    width: 50%;
-    min-height: 600px;
-    padding: 100px 100px 0 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.eighth-section .inner-section .top-content {
-    overflow: hidden;
-}
-.eighth-section .inner-section .bottom-content {
-    overflow: hidden;
-    padding-top: 40px;
-}
-.eighth-section .inner-section .bottom-content i {
-    font-size: 36px;
-    color: rgba(0, 0, 255, 1);
-    padding: 0 0 15px 0;
-}
-.eighth-section .inner-section .bottom-content .quote-p {
-    margin-bottom: 30px;
-    color: rgba(10, 3, 98, 1);
-    font-family: Playfair Display;
-    font-weight: 600;
-    font-size: 25px;
-    text-transform: capitalize;
-    font-style: italic;
-    line-height: 1.6em;
-    letter-spacing: 1px;
-    padding: 0 0 10px 0;
-    text-align: justify;
-}
-.eighth-section .inner-section .bottom-content .nm {
-    margin-bottom: 0;
-    color: rgba(0, 0, 255, 1);
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 22px;
-}
-.eighth-section .inner-section .bottom-content .role {
-    margin-bottom: 0;
-    color: rgba(19, 15, 64, 1);
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 5px 0;
-}
-
-/* End Eighth Section CSS */
-
-/* Start Nineth Section CSS */
-
-.nineth-section {
-    width: 100%;
-
-    overflow: hidden;
-    background-color: rgba(19, 15, 64, 1);
-    background-image: url("images/banner-2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.nineth-section .container {
-    overflow: hidden;
-}
-
-.nineth-section .container .s-h5,
-.nineth-section .container .s-h2 {
-    color: #ffffff;
-}
-
-.nineth-section .container .inner-section {
-    padding: 120px 0;
-    overflow: hidden;
-}
-.nineth-section .container .left-section {
-    float: left;
-    width: 65%;
-}
-
-.nineth-section .container .right-section {
-    float: right;
-    width: 35%;
-}
-
-.nineth-section .container .right-section .btn-2 {
-    padding: 15px 32px;
-    color: rgba(0, 0, 255, 1);
-    background-color: #ffffff;
-    float: right;
-    overflow: hidden;
-    margin-top: 75px;
-}
-.nineth-section .container .btn-2:hover {
-    background-color: rgba(243, 236, 236, 1);
-    color: rgba(0, 0, 255, 1);
-}
-
-/* End Nineth Section CSS */
-
-/* Start Tenth Section CSS */
-.tenth-section {
-    width: 100%;
-    min-height: 500px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 1);
-}
-.tenth-section .container {
-    overflow: hidden;
-    padding: 120px 0;
-}
-.tenth-section .top-section {
-    text-align: center;
-    padding: 0 275px;
-    overflow: hidden;
-}
-.tenth-section .top-section .s-h2 {
-    margin-bottom: 10px;
-}
-.tenth-section .bottom-section {
-    overflow: hidden;
-    margin: 50px 0 0 0;
-}
-.tenth-section .bottom-section .box {
-    width: 23.12%;
-    height: 400px;
-    background-color: rgba(10, 3, 98, 1);
-    float: left;
-    overflow: hidden;
-    margin-right: 2.5%;
-    text-align: center;
-}
-.tenth-section .bottom-section .box-4 {
-    margin-right: 0;
-}
-
-.tenth-section .bottom-section .box .profile-name-title {
-    padding: 28px 0;
-}
-.tenth-section .bottom-section .box .profile-name-title h3 {
-    margin-bottom: 12px;
-    color: rgba(255, 255, 255, 1);
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 22px;
-}
-.tenth-section .bottom-section .box .profile-name-title h4 {
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-/* End Tenth Section CSS */
-
-/* Start Eleventh Section CSS */
-.eleventh-section {
+/* Start Footer Social CSS */
+.footer-social {
     width: 100%;
     overflow: hidden;
-    background-color: rgba(245, 245, 245, 1);
+    background-color: #344b8e;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.eleventh-section .container {
-    overflow: hidden;
-}
-.eleventh-section .box {
-    width: 20%;
-    padding: 50px 0;
-    float: left;
-    overflow: hidden;
-}
-.eleventh-section .box-5 {
-    margin-right: 0;
-}
-.eleventh-section .box .img {
-    overflow: hidden;
-    padding: 42px;
-}
-
-/* End Eleventh Section CSS */
-
-/* Start 12th/Footer Section CSS */
-
-.twelve-section {
-    width: 100%;
-    min-height: 790px;
-    overflow: hidden;
-    background-image: url("images/banner-3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.twelve-section .container {
-    overflow: hidden;
-    padding: 120px 0;
-}
-.twelve-section .container .both-section {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.twelve-section .container .left-section {
-    box-sizing: border-box;
-    padding: 170px 75px 0 20px;
-    width: 45%;
-}
-
-.twelve-section .container .left-section .s-h5,
-.twelve-section .container .left-section .s-h2 {
-    color: #ffffff;
-}
-.twelve-section .container .left-section .s-p {
-    color: rgba(255, 255, 255, 0.8);
-}
-.twelve-section .container .right-section {
-    overflow: hidden;
-    width: 55%;
-}
-.twelve-section .container .right-section form {
-    background-color: rgba(8, 2, 77, 1);
-    padding: 50px 55px 70px 55px;
-}
-.twelve-section .container .right-section form input,
-.twelve-section .container .right-section form textarea {
-    min-height: 38px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid rgba(255, 255, 255, 1);
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.twelve-section .container .right-section form .input-flex {
+.footer-social ul {
     display: flex;
+    width: 850px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
-.twelve-section .container .right-section form .input-flex .nm-n-em {
-    width: 50%;
+.footer-social ul li {
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
 }
-.twelve-section .container .right-section form .name-input-box {
-    margin-right: 10px;
-}
-
-.twelve-section .container .right-section form .input-sub {
-    width: 100%;
-}
-
-.twelve-section .container .right-section form input:focus,
-.twelve-section .container .right-section form textarea:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-.twelve-section .container .right-section form textarea {
-    resize: vertical;
-    overflow: auto;
-    height: 133px;
-}
-
-.twelve-section .container .right-section form .btn {
-    font-family: Montserrat;
-    color: rgba(0, 0, 255, 1);
-    background-color: #ffffff;
-    display: inline-block;
-    padding: 15px 40px;
-    font-size: 15px;
-    font-weight: normal;
-    border-radius: 0.25rem;
-    border: 5px solid transparent;
+.footer-social a {
+    color: #ffffff;
+    font-size: 24px;
     transition: all 0.3s;
 }
-
-.twelve-section .container .right-section form .btn:hover {
-    background-color: rgba(0, 0, 255, 0.8);
-    color: #ffffff;
-}
-/* End 12th/Footer Section CSS */
-
-/* Start Copyright Reserved Section CSS */
-
-.copyright-reserved {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    background-color: #0a0362;
-}
-.copyright-reserved .h2 {
-    padding: 15px 0;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    color: #ffffff;
-    display: block;
+.footer-social ul li:hover a {
+    color: #30bae7;
 }
 
-.copyright-reserved a {
-    color: #ffffff;
-}
-
-/* End Copyright Reserved Section CSS */
+/* End Footer Social CSS */
