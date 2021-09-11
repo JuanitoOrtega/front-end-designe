@@ -1,897 +1,562 @@
 /* Start First Section Responsive CSS */
-
-@media all and (max-width: 1050px) {
-    .first-section .inner-header .container-inner-header {
+@media all and (max-width: 978px) {
+    .first-section .container {
         width: 90%;
     }
-    .first-section .button-try-live {
-        padding-right: 30px;
-    }
-}
 
-@media all and (max-width: 860px) {
-    .first-section .inner-header .container-inner-header {
-        width: 98%;
-    }
-    .first-section .button-try-live {
-        padding-right: 10px;
-    }
-}
-@media all and (max-width: 768px) {
-    .first-section .inner-header .container-inner-header {
-        width: 92%;
-    }
-    .first-section .nav-box {
+    .first-section nav ul {
         display: none;
     }
-    .first-section .nav-logo {
+    .first-section nav form {
         display: block;
     }
 
-    .first-section .button-try-live {
-        margin-right: 80px;
+    .first-section .bg-img .opacity-first h4 {
+        font-size: 3rem;
     }
 }
-@media all and (max-width: 476px) {
-    .first-section .nav-logo i {
-        font-size: 30px;
-    }
-
-    .first-section .nav-logo ul li a {
-        width: 360px;
-    }
-    .first-section .button-try-live {
-        margin-right: 10px;
-        padding: 15px 20px 15px 0px;
-    }
-    .first-section .button-try-live .btn {
-        padding: 8px;
-        font-size: 13px;
+@media all and (max-width: 790px) {
+    .first-section .bg-img {
+        height: 580px;
     }
 }
-@media all and (max-width: 420px) {
-    .first-section .nav-logo ul li a {
-        width: 320px;
-    }
-}
-
-@media all and (max-width: 376px) {
-    .first-section .logo-box {
-        float: none;
-    }
-    .first-section .nav-box {
-        float: none;
-    }
-    .first-section .nav-logo {
-        float: none;
-    }
-
-    .first-section .nav-logo ul {
-        top: 85px;
-        left: 0;
-    }
-    .first-section .button-try-live {
-        float: none;
-    }
-
-    .first-section .nav-logo ul li a {
-        width: 280px;
-    }
-}
-
-/* End Inner Header */
-
-@media all and (max-width: 1243px) {
-    .first-section .container {
-        width: 80%;
-    }
-}
-
-@media all and (max-width: 950px) {
-    .first-section .container h2 {
-        font-size: 50px;
-    }
-}
-
 @media all and (max-width: 768px) {
-    .first-section .container {
-        width: 90%;
-    }
-    .first-section .container p {
-        padding: 0 0 50px 0;
+    .first-section .bg-img .opacity-first h4 {
+        font-size: 2rem;
     }
 }
 
-@media all and (max-width: 420px) {
-    .first-section .container h2 {
-        font-size: 40px;
-    }
-}
 /* End First Section Responsive CSS */
 
-/* Start Second Section Responsive CSS  */
-@media all and (max-width: 1243px) {
+/* Start Second Section Responsive CSS */
+@media all and (max-width: 1273px) {
     .second-section .container {
-        width: 90%;
-        padding: 100px 0 50px 0;
+        width: 1000px;
     }
-    .second-section .right-side .content-box {
-        padding: 0 0;
-    }
-    .second-section .left-side .img-box {
-        width: 95%;
-        padding: 0;
+
+    .second-section .right-section a {
+        height: 282px;
     }
 }
-@media all and (max-width: 1050px) {
-    .second-section .left-side .img-box {
-        min-height: 400px;
+@media all and (max-width: 1020px) {
+    .second-section .left-section .in-container {
+        width: 100%;
+        padding: 20px 20px;
+        overflow: hidden;
     }
-    .second-section .left-side .img-box img {
-        min-height: 400px;
+}
+
+@media all and (max-width: 1000px) {
+    .second-section .container {
+        width: 800px;
+    }
+    .second-section .right-section a {
+        width: 93%;
+        height: 238px;
+    }
+
+    .second-section .right-section a img {
+        top: 7px;
+        left: 7px;
+        bottom: 7px;
+        right: 7px;
     }
 }
 
 @media all and (max-width: 768px) {
-    .second-section .container {
-        padding: 50px 0 50px 0;
-    }
-    .second-section .inner-section {
-        width: 100%;
+    .second-section .section-of-third {
         float: none;
+        width: 100%;
+
     }
-    .second-section .left-side {
-        min-height: 200px;
-    }
-    .second-section .left-side .img-box {
+
+    .second-section .left-section h4 {
         width: 90%;
-        margin: 0 auto;
-        height: auto;
+    }
+    .second-section .left-section p {
+        width: 70%;
     }
 
-    .second-section .left-side .img-box img {
-        height: auto;
-    }
-
-    .second-section .right-side .content-box {
-        padding: 70px 30px 50px 30px;
-    }
-    .second-section .right-side h5,
-    .second-section .right-side h2,
-    .second-section .right-side p {
-        text-align: center;
-    }
-
-    .second-section .right-side h2 {
-        font-size: 40px;
-    }
-    .second-section .right-side .btn-2 {
-        font-size: 14px;
-        padding: 13px 30px;
+    .second-section .right-section a {
+        position: relative;
         display: block;
-        width: 78px;
-        margin: 0 auto;
+        width: 70%;
+        height: 360px;
+        margin: 0 30px;
+    }
+    .second-section .right-section {
+        padding-top: 0;
+        padding-bottom: 90px;
+    }
+    .second-section .right-section .in-container {
+        overflow: hidden;
+    }
+
+    .second-section .right-section a img {
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
     }
 }
 
-@media all and (max-width: 600px) {
-    .second-section .container {
-        width: 95%;
-    }
-    .second-section .left-side .img-box {
-        width: 95%;
-    }
-    .second-section .right-side .content-box {
-        padding: 70px 15px 35px 15px;
-    }
-    .second-section .container h2 {
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width: 445px) {
-    .second-section .right-side .content-box {
-        padding: 70px 0 35px 0;
+@media all and (max-width: 650px) {
+    .second-section .section-of-third {
+        width: 77%;
     }
 }
 
 /* End Second Section Responsive CSS */
 
 /* Start Third Section Responsive CSS */
-
-@media all and (max-width: 1236px) {
-    .third-section .container {
-        width: 95%;
-    }
-}
-@media all and (max-width: 1082px) {
-    .third-section .container {
-        width: 95%;
-    }
-
-    .third-section .row .item-box {
-        height: 230px;
-    }
-
-    .third-section .row .item-box .inner-item-box {
-        padding: 30px 25px;
-    }
-}
-@media all and (max-width: 1077px) {
-    .third-section .left-in-trd {
-        width: 65%;
-    }
-    .third-section .right-in-trd {
-        width: 35%;
-    }
-
-    .third-section .row .item-box {
-        height: 0;
-        min-height: 250px;
+@media all and (max-width: 1100px) {
+    .third-section .bg-color .container {
+        width: 80%;
     }
 }
 
-@media all and (max-width: 900px) {
-    .third-section .container {
+@media all and (max-width: 950px) {
+    .third-section .bg-color .container {
         width: 90%;
     }
-    
-    .third-section .row .item-box {
-        width: 48%;
-        min-height: 211px;
-        margin-top: 4%;
-    }
-
-    .third-section .row .item-box .inner-item-box {
-        padding: 50px 25px;
-    }
 }
-
 @media all and (max-width: 768px) {
-    .third-section .inner-section-in-trd .s-h2 {
-        font-size: 40px;
-    }
-    .third-section .inner-section-in-trd {
-        float: none;
-        width: 100%;
+    .third-section {
+        color: #ffffff;
         text-align: center;
-    }
-
-    .third-section .inner-section-in-trd .btn2-box {
-        float: none;
-    }
-
-    .third-section .row .item-box {
-        min-height: 260px;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .third-section .row .item-box {
         width: 100%;
-        min-height: 280px;
-        margin-top: 30px;
-    }
-
-    .third-section .item-box .inner-item-box .box-content-section {
-        float: none;
-        width: 100%;
-    }
-    .third-section .inner-item-box .s-one svg {
-        width: 50px;
-        margin: 0 auto;
-        display: block;
-    }
-    .third-section .inner-item-box .s-two {
-        text-align: center;
-        margin-top: 30px;
-    }
-}
-@media all and (max-width: 450px) {
-    .third-section .container {
-        width: 95%;
-    }
-}
-
-@media all and (max-width: 270px) {
-    .third-section .row .item-box {
-        min-height: 340px;
+        min-height: 350px;
     }
 }
 
 /* End Third Section Responsive CSS */
 
 /* Start Fourth Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .fourth-section .container {
-        width: 90%;
-    }
-}
-
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1300px) {
     .fourth-section .container {
         width: 95%;
     }
-    .fourth-section .item .content-container {
-        padding: 35px 30px 45px 30px;
+    .fourth-section .top-section hr {
+        width: 10%;
     }
 }
-
-@media all and (max-width: 1100px) {
-    .fourth-section .item .content-container {
-        padding: 35px 30px 45px 30px;
+@media all and (max-width: 1260px) {
+    .fourth-section .container {
+        width: 92%;
     }
 }
-
-@media all and (max-width: 920px) {
-    .fourth-section .left-right-sides {
-        width: 100%;
-        float: none;
-        text-align: center;
+@media all and (max-width: 1200px) {
+    .fourth-section .bottom-section .item-box {
+        height: 280px;
     }
-    .fourth-section .left-right-sides .s-p {
-        padding: 0 15px;
+}
+@media all and (max-width: 1000px) {
+    .fourth-section .top-section hr {
+        width: 13%;
     }
-
-    .fourth-section .item {
-        width: 47.45%;
-        margin-right: 5%;
-        margin-top: 5%;
+    .fourth-section .bottom-section .item-box {
+        width: 48%;
+        height: 250px;
+        margin-right: 4%;
     }
-    .fourth-section .item-container .item-2,
-    .fourth-section .item-container .item-3 {
+    .fourth-section .bottom-section .item-box-2,
+    .fourth-section .bottom-section .item-box-4,
+    .fourth-section .bottom-section .item-box-6 {
         margin-right: 0;
     }
-
-    .fourth-section .item .content-container {
-        padding: 35px 40px 45px 40px;
-    }
 }
-
 @media all and (max-width: 768px) {
     .fourth-section .container {
         width: 90%;
     }
-    .fourth-section .left-right-sides .s-h2 {
-        font-size: 40px;
-    }
-
-    .fourth-section .item {
+    .fourth-section .bottom-section .item-box {
         width: 100%;
         margin-right: 0;
-        margin-top: 40px;
-        float: none;
-    }
-}
-@media all and (max-width: 550px) {
-    .fourth-section .container {
-        width: 95%;
-    }
-}
-@media all and (max-width: 400px) {
-    .fourth-section .item .content-container {
-        padding: 35px 30px 45px 30px;
+        margin-bottom: 10%;
     }
 }
 
 /* End Fourth Section Responsive CSS */
 
 /* Start Fiveth Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .fiveth-section .container {
-        width: 90%;
-    }
-}
-
-@media all and (max-width: 1100px) {
-    .fiveth-section .container {
+@media all and (max-width: 1280px) {
+    .fiveth-section .bg-img .container {
         width: 95%;
     }
-    .fiveth-section .left-section .left-scn-bottom .box {
-        padding: 0;
-    }
 }
-
-@media all and (max-width: 768px) {
-    .fiveth-section .container {
+@media all and (max-width: 1050px) {
+    .fiveth-section {
+        min-height: 240px;
+    }
+    .fiveth-section .bg-img .container {
         width: 90%;
-        margin-top: 100px;
     }
-
-    .fiveth-section .section-lft-rgt {
-        float: none;
-        width: 100%;
-    }
-
-    .fiveth-section .left-section .left-scn-top {
-        padding: 0;
-        text-align: center;
-    }
-    .fiveth-section .s-h2 {
-        font-size: 40px;
-    }
-
-    .fiveth-section .left-section .left-scn-bottom {
-        padding-bottom: 0;
-    }
-
-    .fiveth-section .left-section .left-scn-bottom .box {
-        float: none;
-        width: 100%;
-        min-height: 200px;
-        text-align: center;
-        flex-direction: column;
-    }
-    .fiveth-section .left-section .box .icon-20 {
-        width: 100%;
-        padding: 0 0 30px 0;
-    }
-    .fiveth-section .left-section .left-scn-bottom .box .text-80 {
-        width: 100%;
-    }
-    .fiveth-section .right-section {
-        padding: 0;
-    }
-
-    .fiveth-section .right-section .ratio-scal h2 {
-        font-size: 40px;
+    .fiveth-section .bg-img .container h6 {
+        width: 60%;
     }
 }
-
-@media all and (max-width: 450px) {
-    .fiveth-section .container {
-        width: 95%;
+@media all and (max-width: 790px) {
+    .fiveth-section .bg-img .container {
+        width: 85%;
+    }
+    .fiveth-section .bg-img .container h6 {
+        width: 100%;
+        margin: 70px 0 0 0;
+        float: none;
+    }
+    .fiveth-section .bg-img .container .btn-a {
+        float: none;
+        margin: 0 auto;
+        width: 259px;
+    }
+    .fiveth-section .bg-img .container .btn-a a {
+        margin: 30px 0 0 0;
+        font-size: 0.9rem;
     }
 }
 
 /* End Fiveth Section Responsive CSS */
 
 /* Start Sixth Section Responsive CSS */
-@media all and (max-width: 1255px) {
+
+@media all and (max-width: 1280px) {
     .sixth-section .container {
-        width: 95%;
+        width: 1150px;
     }
-    .sixth-section .bottom-section .video-theme .vdo-logo-icon i {
-        font-size: 90px;
-    }
-}
-@media all and (max-width: 1000px) {
-    .sixth-section .container .top-section {
-        padding: 50px 150px;
-    }
-    .sixth-section .bottom-section .video-theme .vdo-logo-icon i {
-        font-size: 80px;
-    }
-}
-@media all and (max-width: 830px) {
-    .sixth-section .container .top-section {
-        padding: 50px 40px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .sixth-section .container {
-        padding: 50px 0 20px 0;
-    }
-    .sixth-section .container .top-section {
-        padding: 50px 30px;
-    }
-    .sixth-section .container .top-section .s-h2 {
-        font-size: 40px;
+    .sixth-section .profile-box .profile-photo {
+        height: 200px;
     }
 
-    .sixth-section .bottom-section .video-theme {
-        max-height: 260px;
-    }
-
-    .sixth-section .bottom-section .video-theme .vdo-logo-icon i {
-        font-size: 60px;
-    }
-}
-
-@media all and (max-width: 550px) {
-    .sixth-section .container .top-section {
-        padding: 50px 0;
-    }
-    .sixth-section .bottom-section {
-        padding: 0;
-    }
-}
-
-@media all and (max-width: 450px) {
-    .sixth-section .bottom-section .video-theme .vdo-logo-icon {
-        top: 38%;
-    }
-}
-@media all and (max-width: 350px) {
-    .sixth-section .bottom-section .video-theme .vdo-logo-icon i {
-        font-size: 50px;
-    }
-}
-/* End Sixth Section Responsive CSS */
-
-/* Start Seventh Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .seventh-section .container {
-        width: 95%;
-    }
-}
-@media all and (max-width: 1100px) {
-    .seventh-section .bottom-section .box .box-container {
-        padding: 50px 30px;
-    }
-}
-@media all and (max-width: 1000px) {
-    .seventh-section .container .top-section {
-        padding: 0 150px;
-    }
-
-    .seventh-section .bottom-section .box .box-container {
-        padding: 50px 20px;
-    }
-}
-@media all and (max-width: 830px) {
-    .seventh-section .container .top-section {
-        padding: 0 40px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .seventh-section .container {
-        padding: 100px 0 75px 0;
-    }
-    .seventh-section .container .top-section {
-        padding: 0 30px;
-    }
-
-    .seventh-section .container .top-section .s-h2 {
-        font-size: 40px;
-    }
-    .seventh-section .container .bottom-section {
-        padding-bottom: 0;
-    }
-    .seventh-section .bottom-section .box {
-        float: none;
+    .sixth-section .profile-box ul {
         width: 90%;
-        margin: 0 auto;
-    }
-    .seventh-section .bottom-section .box-2,
-    .seventh-section .bottom-section .box-3 {
-        margin-top: 50px;
-    }
-
-    .seventh-section .bottom-section .box .box-container {
-        padding: 50px;
     }
 }
 
-@media all and (max-width: 550px) {
-    .seventh-section .container .top-section {
-        padding: 0;
+@media all and (max-width: 1160px) {
+    .sixth-section .container {
+        width: 1050px;
+    }
+    .sixth-section .container .profile-description-container .profile-box {
+        width: 22.75%;
+        min-height: 530px;
+        margin-right: 3%;
+    }
+    .sixth-section .container .profile-description-container .profile-box-4 {
+        margin-right: 0;
+    }
+
+    .sixth-section .profile-box .profile-photo {
+        height: 185px;
+    }
+    .sixth-section .profile-box .container-in-profile {
+        padding: 20px 5px;
     }
 }
-@media all and (max-width: 500px) {
-    .seventh-section .bottom-section .box {
+
+@media all and (max-width: 1050px) {
+    .sixth-section .headline-section hr {
+        width: 12%;
+    }
+
+    .sixth-section .container {
+        width: 800px;
+    }
+    .sixth-section .profile-box .profile-photo {
+        height: 145px;
+    }
+    .sixth-section .profile-box .profile-photo a i {
+        top: 42%;
+        left: 39%;
+        font-size: 1.6rem;
+    }
+
+    .sixth-section .profile-box ul {
+        width: 95%;
+    }
+    .sixth-section .profile-box ul li {
+        margin: 4%;
+    }
+}
+
+@media all and (max-width: 810px) {
+    .sixth-section .headline-section hr {
+        width: 15%;
+    }
+
+    .sixth-section .container {
+        width: 650px;
+    }
+
+    .sixth-section .container .profile-description-container .profile-box {
+        width: 47.5%;
+        min-height: 580px;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .sixth-section .container .profile-description-container .profile-box-2,
+    .sixth-section .container .profile-description-container .profile-box-4 {
+        margin-right: 0;
+    }
+    .sixth-section .profile-box .profile-photo {
+        height: 245px;
+    }
+    .sixth-section .profile-box .profile-photo a i {
+        top: 45%;
+        left: 43%;
+        font-size: 2rem;
+    }
+    .sixth-section .profile-box .container-in-profile {
+        padding: 30px;
+    }
+
+    .sixth-section .profile-box .p-2 {
+        padding: 80px 0;
+    }
+    .sixth-section .profile-box ul {
+        width: 92%;
+    }
+    .sixth-section .profile-box ul li {
+        margin: 5.5%;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .sixth-section .headline-section hr {
+        width: 22%;
+    }
+
+    .sixth-section .container {
+        width: 370px;
+    }
+
+    .sixth-section .container .profile-description-container .profile-box {
+        width: 360px;
+        min-height: 580px;
+        float: none;
+        margin: 40px auto 0 auto;
+    }
+    .sixth-section .profile-box .profile-photo {
+        height: 288px;
+    }
+}
+
+@media all and (max-width: 365px) {
+    .sixth-section .container {
         width: 100%;
     }
-}
-@media all and (max-width: 400px) {
-    .seventh-section .bottom-section .box .box-container {
-        padding: 50px 30px;
+    .sixth-section .container .profile-description-container .profile-box {
+        width: 90%;
     }
 }
 
-@media all and (max-width: 300px) {
-    .seventh-section .bottom-section .box .box-container {
-        padding: 50px 20px;
+/* End Sixth Section Responsive CSS */
+
+/* STart Seventh Section Responsive CSS */
+@media all and (max-width: 1400px) {
+    .seventh-section .container {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .seventh-section .container {
+        width: 85%;
+    }
+}
+@media all and (max-width: 1000px) {
+    .seventh-section .headline-section hr {
+        width: 12%;
+    }
+
+    .seventh-section .container {
+        width: 90%;
+    }
+
+    .seventh-section .article-container .article .profile-box {
+        padding: 20px 15px;
+    }
+    .seventh-section .article-container .article .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .seventh-section .article-container .article .name-n-title {
+        padding: 15px 0 15px 15px;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .seventh-section .headline-section hr {
+        width: 13%;
+    }
+
+    .seventh-section .container .article-container .article {
+        width: 47.85%;
+        margin-right: 4.25%;
+    }
+    .seventh-section .container .article-container .article-2 {
+        margin-right: 0;
+    }
+
+    .seventh-section .article-container .article .profile-box {
+        padding: 25px 20px;
+    }
+    .seventh-section .article-container .article .profile-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .seventh-section .article-container .article .name-n-title {
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .seventh-section .headline-section hr {
+        width: 20%;
+    }
+
+    .seventh-section .container .article-container .article {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .seventh-section .container .article-container .article {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
     }
 }
 
 /* End Seventh Section Responsive CSS */
 
 /* Start Eighth Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .eighth-section .container {
-        width: 90%;
+@media all and (max-width: 1400px) {
+    .eight-section .container {
+        width: 80%;
     }
-    .eighth-section .inner-section {
-        padding-bottom: 50px;
+}
+
+@media all and (max-width: 1300px) {
+    .eight-section .container {
+        width: 85%;
     }
 }
 @media all and (max-width: 1000px) {
-    .eighth-section .inner-section {
-        padding: 100px 30px 50px 0;
-    }
-}
-@media all and (max-width: 768px) {
-    .eighth-section .bg-img {
-        position: initial;
-        width: 100%;
-        max-height: 450px;
-    }
-    .eighth-section .bg-img img {
-        transform: scaleY(1) scaleX(1);
-        margin-top: 0;
+    .eight-section .headline-section hr {
+        width: 12%;
     }
 
-    .eighth-section .container {
-        width: 95%;
+    .eight-section .container {
+        width: 90%;
     }
-    .eighth-section .inner-section {
+}
+
+@media all and (max-width: 860px) {
+    .eight-section .headline-section hr {
+        width: 13%;
+    }
+
+    .eight-section .container .article-container .article {
+        width: 47.85%;
+        margin-right: 4.25%;
+    }
+    .eight-section .container .article-container .article-2 {
+        margin-right: 0;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .eight-section .headline-section hr {
+        width: 20%;
+    }
+
+    .eight-section .container .article-container .article {
+        width: 90%;
+        float: none;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .eight-section .container .article-container .article {
         width: 100%;
-        text-align: center;
-        padding: 70px 0 60px 0;
-    }
-    .eighth-section .inner-section .top-content .s-h2 {
-        font-size: 40px;
-    }
-    .eighth-section .inner-section .bottom-content .quote-p {
-        text-align: center;
+        float: none;
+        margin: 0 auto 30px auto;
     }
 }
 
 /* End Eighth Section Responsive CSS */
 
-/* Start Nineth Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .nineth-section .container {
-        width: 95%;
+/* Start Footer/Nineth Section Responsive CSS */
+@media all and (max-width: 1400px) {
+    .footer-section .container {
+        width: 1265px;
     }
 }
-@media all and (max-width: 900px) {
-    .nineth-section .container .inner-section {
-        padding: 60px 0 20px 0;
-        text-align: center;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .nineth-section .container .inner-section {
-        float: none;
-        width: 100%;
-    }
-
-    .nineth-section .container .right-section {
-        padding: 5px 0;
-    }
-    .nineth-section .container .s-h2 {
-        font-size: 40px;
-    }
-    .nineth-section .container .right-section .btn-2 {
-        float: none;
-        margin: 0 0 70px 0;
-    }
-}
-
-/* End Nineth Section Responsive CSS */
-
-/* Start Tenth Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .tenth-section .container {
-        width: 95%;
-    }
-    .tenth-section .bottom-section .box {
-        height: initial;
-    }
-}
-
-@media all and (max-width: 1200px) {
-    .tenth-section .top-section {
-        padding: 0 200px;
-    }
-    .tenth-section .bottom-section .box {
-        min-height: 250px;
-    }
-}
-@media all and (max-width: 1000px) {
-    .tenth-section .top-section {
-        padding: 0 150px;
-    }
-    .tenth-section .bottom-section .box .profile-name-title {
-        padding: 20px 0;
-    }
-}
-@media all and (max-width: 800px) {
-    .tenth-section .top-section {
-        padding: 0 100px;
-    }
-}
-@media all and (max-width: 768px) {
-    .tenth-section .container {
-        padding: 75px 0;
-    }
-    .tenth-section .top-section {
-        padding: 0 50px;
-    }
-    .tenth-section .top-section .s-h2 {
-        font-size: 40px;
-    }
-    .tenth-section .bottom-section .box {
-        width: 47.5%;
-        min-height: 200px;
-        margin-top: 30px;
-        margin-right: 5%;
-    }
-    .tenth-section .bottom-section .box-2,
-    .tenth-section .bottom-section .box-4 {
-        margin-right: 0;
-    }
-    .tenth-section .bottom-section .box-1,
-    .tenth-section .bottom-section .box-2 {
-        margin-top: 0;
-    }
-    .tenth-section .bottom-section .box .profile-name-title {
-        padding: 30px 0;
-    }
-}
-@media all and (max-width: 600px) {
-    .tenth-section .bottom-section .box {
+@media all and (max-width: 1300px) {
+    .footer-section .container {
         width: 90%;
-        margin-right: 0;
-        float: none;
-        margin: 30px auto 0 auto;
-    }
-    .tenth-section .bottom-section .box-1 {
-        margin-top: 0;
-    }
-}
-
-@media all and (max-width: 620px) {
-    .tenth-section .top-section {
-        padding: 0 20px;
-    }
-}
-@media all and (max-width: 500px) {
-    .tenth-section .top-section {
-        padding: 0;
-    }
-}
-@media all and (max-width: 450px) {
-    .tenth-section .bottom-section .box {
-        width: 100%;
-    }
-}
-
-/* End Tenth Section Responsive CSS */
-
-/* Start Eleventh Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .eleventh-section .container {
-        width: 95%;
     }
 }
 @media all and (max-width: 1100px) {
-    .eleventh-section .box .img {
-        padding: 20px;
-    }
-}
-@media all and (max-width: 768px) {
-    .eleventh-section .container .box {
-        width: 33.33%;
-    }
-    .eleventh-section .container .box-4,
-    .eleventh-section .container .box-5 {
-        display: none;
-    }
-}
-@media all and (max-width: 600px) {
-    .eleventh-section .container .box {
-        width: 50%;
-    }
-    .eleventh-section .container .box-3 {
-        display: none;
-    }
-}
-@media all and (max-width: 450px) {
-    .eleventh-section .box {
-        padding: 30px 0;
-    }
-    .eleventh-section .box .img {
-        padding: 0;
-    }
-}
-
-/* End Eleventh Section Responsive CSS */
-
-/* Start 12th/Footer Section Responsive CSS */
-@media all and (max-width: 1255px) {
-    .twelve-section .container {
+    .footer-section .container {
         width: 95%;
-    }
-    .twelve-section .container .both-section {
-        width: 50%;
-    }
-    .twelve-section .container .left-section {
-        padding-right: 30px;
-    }
-}
-@media all and (max-width: 1050px) {
-    .twelve-section .container .right-section form {
-        padding: 40px 40px 55px 40px;
     }
 }
 @media all and (max-width: 900px) {
-    .twelve-section .container .right-section form .input-flex {
-        display: block;
+    .footer-section .container {
+        width: 90%;
     }
+    .footer-section .box {
+        width: 47.5%;
 
-    .twelve-section .container .right-section form .input-flex .nm-n-em {
-        width: 100%;
+        margin-right: 5%;
     }
-    .twelve-section .container .right-section form .name-input-box {
+    .footer-section .box-2,
+    .footer-section .box-4 {
         margin-right: 0;
     }
 }
-
-@media all and (max-width: 768px) {
-    .twelve-section .container {
-        overflow: hidden;
-        padding: 70px 0;
+@media all and (max-width: 600px) {
+    .footer-section .container {
+        width: 90%;
     }
-
-    .twelve-section .container .both-section {
-        width: 100%;
+    .footer-section .box {
+        width: 90%;
         float: none;
-    }
-    .twelve-section .container .left-section {
-        padding: 0;
-        text-align: center;
-    }
-    .twelve-section .container .left-section .s-h2 {
-        font-size: 40px;
-    }
-    .twelve-section .container .right-section {
-        margin-top: 60px;
-    }
-
-    .twelve-section .container .right-section form {
-        padding: 50px 55px 70px 55px;
-    }
-
-    .twelve-section .container .right-section form .input-flex {
-        display: flex;
-    }
-    .twelve-section .container .right-section form .input-flex .nm-n-em {
-        width: 50%;
-    }
-    .twelve-section .container .right-section form .name-input-box {
-        margin-right: 10px;
+        margin: 0 auto;
     }
 }
-@media all and (max-width: 650px) {
-    .twelve-section .container .right-section form {
-        padding: 45px 20px 40px 20px;
-    }
-}
-@media all and (max-width: 500px) {
-    .twelve-section .container .right-section form .input-flex {
-        display: block;
-    }
-
-    .twelve-section .container .right-section form .input-flex .nm-n-em {
-        width: 100%;
-    }
-    .twelve-section .container .right-section form .name-input-box {
-        margin-right: 0;
-    }
-    .twelve-section .container .right-section form .btn {
-        width: 100%;
-    }
-}
-
 @media all and (max-width: 320px) {
-    .twelve-section .container .right-section form {
-        padding: 40px 10px 40px 10px;
+    .footer-section .container {
+        width: 100%;
+    }
+}
+/* Start Copyright Footer */
+@media all and (max-width: 1100px) {
+    .copyright-foot .container {
+        width: 85%;
     }
 }
 
-/* End 12th/Footer Section Responsive CSS */
-
-/* Start Copyright Reserved Responsive CSS */
-
-@media all and (max-width: 1255px) {
-    .copyright-reserved .container {
+@media all and (max-width: 900px) {
+    .copyright-foot .container {
         width: 95%;
     }
 }
-/* End Copyright Reserved Responsive CSS */
+@media all and (max-width: 768px) {
+    .copyright-foot .container {
+        width: 90%;
+    }
+    .copyright-foot .inner-box {
+        float: none;
+    }
+}
+
+/* End Copyright Footer */
+
+/* End Footer/Nineth Section Responsive CSS */
